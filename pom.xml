@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<project
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+    xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.geoserver</groupId>
+    <artifactId>community</artifactId>
+    <version>2.11.2</version>
+  </parent>
+
+  <groupId>de.terrestris</groupId>
+  <artifactId>geoserver-notification-http</artifactId>
+  <version>2.11.2-SNAPSHOT</version>
+  <name>GeoServer notification event system extension for generic HTTP</name>
+
+  <repositories>
+    <repository>
+        <id>central2</id>
+        <url>http://repo2.maven.org/maven2/</url>
+        <releases><enabled>true</enabled></releases>
+    </repository>
+    <repository>
+        <id>boundless</id>
+        <url>https://repo.boundlessgeo.com/release/</url>
+        <releases><enabled>true</enabled></releases>
+    </repository>
+    <repository>
+        <id>geosolutions</id>
+        <url>http://maven.geo-solutions.it/</url>
+        <releases><enabled>true</enabled></releases>
+    </repository>
+    <repository>
+        <id>geotoolkit</id>
+        <url>http://maven.geotoolkit.org/</url>
+    </repository>
+  </repositories>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.geoserver</groupId>
+      <artifactId>gs-main</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.geoserver.community</groupId>
+      <artifactId>gs-notification-common</artifactId>
+      <version>2.11.2</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+    </dependency>
+  </dependencies>
+
+</project>
