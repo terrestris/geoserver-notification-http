@@ -60,6 +60,8 @@ public class HttpSender implements NotificationSender {
             String response = new String(post.getResponseBody(), "UTF-8");
             LOGGER.warning("Could not send notification message: " + response);
             LOGGER.warning("Status code was " + responseCode);
+        } else {
+            LOGGER.info("Notified web client of updated feature type.");
         }
     }
 
