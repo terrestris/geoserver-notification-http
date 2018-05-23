@@ -15,25 +15,26 @@
   <version>2.11.2-SNAPSHOT</version>
   <name>GeoServer notification event system extension for generic HTTP</name>
 
+
+  <distributionManagement>
+    <repository>
+      <id>nexus.terrestris.de-releases</id>
+      <name>Nexus Release Repository</name>
+      <url>https://nexus.terrestris.de/repository/geoserver-extras/</url>
+    </repository>
+    <snapshotRepository>
+      <id>nexus.terrestris.de-snapshots</id>
+      <name>SHOGun Snapshot Repository</name>
+      <url>https://nexus.terrestris.de/repository/geoserver-extras/</url>
+    </snapshotRepository>
+  </distributionManagement>
+
   <repositories>
     <repository>
-        <id>central2</id>
-        <url>http://repo2.maven.org/maven2/</url>
-        <releases><enabled>true</enabled></releases>
-    </repository>
-    <repository>
-        <id>boundless</id>
-        <url>https://repo.boundlessgeo.com/release/</url>
-        <releases><enabled>true</enabled></releases>
-    </repository>
-    <repository>
-        <id>geosolutions</id>
-        <url>http://maven.geo-solutions.it/</url>
-        <releases><enabled>true</enabled></releases>
-    </repository>
-    <repository>
-        <id>geotoolkit</id>
-        <url>http://maven.geotoolkit.org/</url>
+      <id>nexus.terrestris.de</id>
+      <url>https://nexus.terrestris.de/repository/public//</url>
+      <releases><enabled>true</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
     </repository>
   </repositories>
 
