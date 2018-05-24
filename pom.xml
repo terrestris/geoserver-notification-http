@@ -15,6 +15,12 @@
   <version>2.11.2-SNAPSHOT</version>
   <name>GeoServer notification event system extension for generic HTTP</name>
 
+  <scm>
+    <connection>scm:git:git@github.com:terrestris/geoserver-notification-http.git</connection>
+    <developerConnection>scm:git:git@github.com:terrestris/geoserver-notification-http.git</developerConnection>
+    <url>https://github.com/terrestris/geoserver-notification-http</url>
+    <tag>HEAD</tag>
+  </scm>
 
   <distributionManagement>
     <repository>
