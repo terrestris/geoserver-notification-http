@@ -5,7 +5,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
-
 import org.apache.commons.httpclient.Credentials;
 import org.apache.commons.httpclient.HttpClient;
 import org.apache.commons.httpclient.UsernamePasswordCredentials;
@@ -17,13 +16,12 @@ import org.geoserver.notification.common.sender.NotificationSender;
 import org.geotools.util.logging.Logging;
 
 /**
- * A simple {@link NotificationSender} that sends out notifications about which
- * feature types have changed data over HTTP.
- *
+ * A simple {@link NotificationSender} that sends out notifications about which feature types have
+ * changed data over HTTP.
  */
 public class HttpSender implements NotificationSender {
 
-    private final static Logger LOGGER = Logging.getLogger(HttpSender.class);
+    private static final Logger LOGGER = Logging.getLogger(HttpSender.class);
 
     protected String url;
 
@@ -44,8 +42,10 @@ public class HttpSender implements NotificationSender {
         URL url = new URL(this.url);
 
         Credentials defaultcreds = new UsernamePasswordCredentials(username, password);
-        client.getState().setCredentials(new AuthScope(url.getHost(), url.getPort(), AuthScope.ANY_REALM),
-                defaultcreds);
+        client.getState()
+                .setCredentials(
+                        new AuthScope(url.getHost(), url.getPort(), AuthScope.ANY_REALM),
+                        defaultcreds);
         return client;
     }
 
@@ -64,5 +64,4 @@ public class HttpSender implements NotificationSender {
             LOGGER.info("Notified web client of updated feature type.");
         }
     }
-
 }
