@@ -7,9 +7,8 @@ import org.opengis.feature.type.FeatureType;
 import org.opengis.feature.type.Name;
 
 /**
- * A simple {@link NotificationEncoder} that encodes an updated feature type's
- * namespace and localname as JSON: {"namespace":
- * "http://namespace.org/namespace", "localname": "myfeaturetype"}
+ * A simple {@link NotificationEncoder} that encodes an updated feature type's namespace and
+ * localname as JSON: {"namespace": "http://namespace.org/namespace", "localname": "myfeaturetype"}
  */
 public class SimpleJsonEncoder implements NotificationEncoder {
 
@@ -23,5 +22,4 @@ public class SimpleJsonEncoder implements NotificationEncoder {
         sb.append("\",\"localname\":\"").append(name.getLocalPart()).append("\"}");
         return sb.toString().getBytes("UTF-8");
     }
-
 }

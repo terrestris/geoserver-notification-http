@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
     http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/tx
     http://www.springframework.org/schema/tx/spring-tx.xsd"
-	default-autowire="byName">
+       default-autowire="byName">
 
-    <bean id="httpSender"
+  <bean id="httpSender"
         class="org.geoserver.notification.common.SenderXStreamInitializer">
-        <constructor-arg value="httpSender"></constructor-arg>
-        <constructor-arg value="de.terrestris.geoservernotificationhttp.HttpSender"></constructor-arg>
-    </bean>
+    <constructor-arg value="httpSender"/>
+    <constructor-arg value="de.terrestris.geoservernotificationhttp.HttpSender"/>
+  </bean>
 
-    <bean id="simpleJsonEncoder"
+  <bean id="simpleJsonEncoder"
         class="org.geoserver.notification.common.EncoderXStreamInitializer">
-        <constructor-arg value="simpleJsonEncoder"></constructor-arg>
-        <constructor-arg value="de.terrestris.geoservernotificationhttp.SimpleJsonEncoder"></constructor-arg>
-    </bean>
+    <constructor-arg value="simpleJsonEncoder"/>
+    <constructor-arg value="de.terrestris.geoservernotificationhttp.SimpleJsonEncoder"/>
+  </bean>
 
 </beans>
