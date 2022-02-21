@@ -1,5 +1,5 @@
 <!--
-  ~ SHOGun GPRO, based on https://terrestris.github.io/shogun/
+  ~ Geoserver http notification plugin
   ~
   ~ Copyright © 2022-present terrestris GmbH & Co. KG
   ~
@@ -16,7 +16,7 @@
   ~ limitations under the License.
   ~
 -->
-<project name="GPRO Webgis">
+<project name="Geoserver http notification plugin">
   <skin>
     <groupId>org.apache.maven.skins</groupId>
     <artifactId>maven-fluido-skin</artifactId>
