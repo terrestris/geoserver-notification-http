@@ -3,8 +3,8 @@ package de.terrestris.geoservernotificationhttp;
 import org.geoserver.catalog.impl.FeatureTypeInfoImpl;
 import org.geoserver.notification.common.Notification;
 import org.geoserver.notification.common.NotificationEncoder;
-import org.opengis.feature.type.FeatureType;
-import org.opengis.feature.type.Name;
+import org.geotools.api.feature.type.FeatureType;
+import org.geotools.api.feature.type.Name;
 
 /**
  * A simple {@link NotificationEncoder} that encodes an updated feature type's namespace and
